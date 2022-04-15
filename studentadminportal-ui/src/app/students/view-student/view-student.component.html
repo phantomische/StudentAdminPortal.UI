@@ -22,13 +22,15 @@
           <div class="col-xs-6">
             <mat-form-field appearance="fill">
               <mat-label>First Name</mat-label>
-              <input type="text" matInput [(ngModel)]="student.firstName" name="firstName">
+              <input type="text" matInput [(ngModel)]="student.firstName" name="firstName" required>
+              <mat-error>This is a required field</mat-error>
             </mat-form-field>
           </div>
           <div class="col-xs-6">
             <mat-form-field appearance="fill">
               <mat-label>Last Name</mat-label>
-              <input type="text" matInput [(ngModel)]="student.lastName" name="lastName">
+              <input type="text" matInput [(ngModel)]="student.lastName" name="lastName" required>
+              <mat-error>This is a required field</mat-error>
             </mat-form-field>
           </div>
         </div>
